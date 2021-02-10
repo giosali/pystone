@@ -7,6 +7,26 @@
 A command line tool written in Python for translating text through Reverso.
 
 
+* [pystone](#pystone)
+  * [Requirements](#requirements)
+  * [Installation](#installation)
+  * [Usage](#usage)
+    * [Command Line Arguments](#command-line-arguments)
+    * [Documented Commands](#documented-commands)
+      * [settings](#settings)
+      * [set](#set)
+        * [Flexibility](#flexibility)
+      * [translate](#translate)
+      * [examples](#examples)
+      * [alternatives](#alternatives)
+      * [audio](#audio)
+      * [reverse](#reverse)
+      * [exit](#exit)
+      * [help](#help)
+      * [deepl](#deepl)
+  * [Supported Languages](#supported-languages)
+  * [Limits](#limits)
+
 ## Requirements
 
 To be able to use `pystone`, you will need at least Python 3.6 or higher. This tool makes use of the [requests](https://github.com/psf/requests) and [playsound](https://github.com/TaylorSMarks/playsound) packages.
@@ -61,7 +81,7 @@ Once the interpreter has been activated, there are several commands that are at 
 ```
 Documented commands (type help <topic>):
 ========================================
-alternatives  audio  deepl  examples  exit  help  reverse set settings  translate
+alternatives  audio  deepl  examples  exit  help  reverse  set  settings  translate
 ```
 
 #### settings
@@ -217,3 +237,8 @@ A table consisting of the currently supported languages:
 | Russian    | ✔ | ✔ |
 | Spanish    | ✔ | ✔ |
 | Turkish    | ✔ | ❌ |
+
+
+## Limits
+
+Reverso only allows text with a maximum of 800 characters. For the audio portion, only around the first 150 characters will be read aloud.
